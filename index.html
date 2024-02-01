@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Desafio Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+                <h1 class="tituloPrincipal">WheezyCrypt Panama</h1>
+        </header>
+        <main>
+            <form>
+                <label for="textoEncriptar">Texto a encriptar o desencriptar:</label>
+                <input type="text" id="textoEncriptar" required placeholder="Ingrese su texto aquí:">
+
+                <button class="botonEncriptaTexto" type="button" onclick="encriptarTexto()">Encriptar</button>
+                <button class="botonDesencriptaTexto" type="button" onclick="desencriptarTexto()">Desencriptar</button>
+
+                <label for="salidaTexto"></label>
+                <textarea id="salidaTexto" rows="4" cols="50" readonly></textarea>
+
+                <button class="botonCopiar" type="button" onclick="copiarTexto()">Copiar Texto</button>
+
+                <button class="botonLimpiar" type="button" onclick="limpiarTexto()">Limpiar Campos</button>
+            </form>
+        </main>
+        <footer>
+            <img class="logo" src="imagenes/logo.png" alt="logo del desafío">
+            <p class="pie">&copy; Copyright. WheezyCrypt Panama - 2024 </p>
+        </footer>
+        <script src="app.js" defer></script>
+    </body>
+</html>
